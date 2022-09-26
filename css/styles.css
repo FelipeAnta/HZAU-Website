@@ -208,7 +208,6 @@ nav ul li ul li a:hover{
     height: 100%;
     display: flex;
     align-items: center;
-    display: none;
 }
 #label-check{
     width: 26px;
@@ -224,7 +223,6 @@ nav ul li ul li a:hover{
 footer{
     background: #6f0817;
     padding: 2rem;
-    padding-top: 2rem;
     margin-top: 0px;
     width: 100%;
 }
@@ -239,6 +237,7 @@ footer{
     align-items: center;
     justify-content: center;
     margin-left: 5rem;
+    font-size: 2rem;
 }
 .footer__contenido ul{
     list-style: none;
@@ -300,7 +299,7 @@ footer{
 /*NOSOTROS*/
 .fondo-descripcion{
     width: 100%;
-    height: 100%;
+    height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -308,7 +307,6 @@ footer{
     background-size: cover;
     background-repeat: none;
     background-position: center;
-    height: 1200px;
 }
 
 .box__contenido-nos{
@@ -341,7 +339,7 @@ footer{
 .indice-colum a{
     padding: 2rem;
     margin-top: 3rem;
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     color: var(--blanco);
     background: var(--secundario);
@@ -355,7 +353,7 @@ footer{
 }
 .indice-venpuer img{
     width: 100%;
-    height: 600px;
+    height: 500px;
     padding: 3rem;
     background: var(--gris);
     border-radius: 2rem;
@@ -402,7 +400,8 @@ footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center ;
-    margin: 8rem 6rem;
+    gap: 10rem;
+    margin: 8rem 10rem;
     padding: 3rem;
     background: var(--gris-claro);
     border-radius: 3rem;
@@ -422,7 +421,7 @@ footer{
 }
 .imagenes-ventanas img{ /*para los tipos y direccion de pliegue*/
     width: 100%;
-    height: 50rem;
+    height: 40rem;
     padding: 1rem;
     margin-top: 2rem;
     background: var(--gris);
@@ -492,7 +491,7 @@ footer{
 }
 
 .fondo-perfiles .caja-perfil .img-perfil img{
-    width: 100%;
+    width: 700px;
 }
 
 .fondo-perfiles .box-perfil .img-perfil img{
@@ -670,7 +669,7 @@ footer{
 }    
 
 .imagenes-marcas img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.6s;
 }
 
@@ -700,7 +699,7 @@ footer{
 }
 
 .imagenes-obra img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.6s;
 }
 
@@ -871,6 +870,9 @@ footer{
     .fondo-tipo-ventana{
         grid-template-columns: repeat(1, 1fr);
     }
+    .fondo-perfiles .caja-perfil .img-perfil img{
+        width: 100%;
+    }
     /*PRODUCTOS MAMPARA --- INDICE*/
     .indice-mamtectec section{
         grid-template-columns: repeat(1, 1fr);
@@ -992,7 +994,7 @@ footer{
     }
     /*NOSOTROS*/
     .box__contenido-nos{
-        height: 600px;
+        height: auto;
     }
     
     .box__contenido-nos h4{
