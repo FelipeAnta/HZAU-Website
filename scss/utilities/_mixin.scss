@@ -1,0 +1,19 @@
+@mixin tamaños ($width,$height){
+    width: $width;
+    height: $height;
+}
+@mixin propiedades-flex ($direction, $justify, $aling){
+
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+
+}
+
+@mixin propiedades-grid ($template,$justify,$gap){
+    display: grid;
+    grid-template-columns: $template;
+    justify-content: $justify;
+    gap: $gap;
+}

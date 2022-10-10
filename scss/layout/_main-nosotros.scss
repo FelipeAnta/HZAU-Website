@@ -1,0 +1,23 @@
+/*NOSOTROS*/
+.fondo-descripcion{
+    @include tamaños(100%,1000px);
+    @include propiedades-flex (none, center, center);
+    background-image: url(../assets/fabricaNieve.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+}
+
+.box__contenido-nos{
+    background: #5c5b5b;
+    padding: 6rem;
+    border-radius: 3rem 7rem;
+    margin: 0px 40px;
+    opacity: 85%;
+    @include tamaños(100%,none);
+    color: $color-blanco;
+    h4{
+        text-align: center;
+        color: $color-verde_claro;
+    }
+}

@@ -1,0 +1,30 @@
+/*INDEX.HTML*/
+.contenedor{
+    @include propiedades-grid (repeat(1,1fr),center,none);
+}
+
+.box__1i img{
+    @include tamaños(100%,auto);
+    border-radius: 40px;
+}
+
+.box__i{
+    background: $color-gris;
+    text-align: center;
+    border-radius: 3rem;
+    padding: 2rem;
+    margin: 30px 0px;
+    h1{
+        width: fit-content;
+        margin: 0 auto;
+        background: $color-verde_claro;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+    p{
+        background: $color-gris-claro;
+        padding: 15px;
+        border-radius: 2rem;
+        margin: 20px 0px;
+    }
+}

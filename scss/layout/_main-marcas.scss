@@ -1,0 +1,49 @@
+/*MARCASSS*/
+.fondo-marca h1{
+    width: fit-content;
+    color: $color-blanco;
+    background-color:$color-gris-claro;
+    padding: 3rem;
+    margin: 3rem auto;
+    border-radius: 2rem 5rem;
+}
+.imagenes-marcas{
+    @include propiedades-grid (repeat(2,1fr),center,3rem);
+    padding: 4rem;
+    padding-bottom: 7rem;
+    border-radius: 4rem;
+    box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.5);
+    transition: 0.3s;
+    background-color: $color-blanco;
+    img{
+        @include tamaños(100%,35rem);
+        box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.5);
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.05);
+            transition: 0.6s;
+        }
+    }    
+}
+.gu-color{
+    background: $color-blanco;
+}
+.imagenes-obra{
+    @include propiedades-grid (repeat(3,1fr),center,2rem);
+    padding: 4rem;
+    padding-bottom: 7rem;
+    background: $color-verde_claro;
+    border-radius: 4rem 4rem 0rem 0rem;
+    box-shadow: 0rem 5rem 3rem 0rem rgba(0,0,0,0.5);
+    transition: 0.3s;
+    img{
+        @include tamaños(100%,35rem);
+        box-shadow: 0rem 1rem 2rem 0rem rgba(0,0,0,0.5);
+        transition: 0.3s;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.6s;
+        }
+    }
+}
+

@@ -1,0 +1,102 @@
+
+/*CONTACTO*/
+.fondo-contacto{
+    background: radial-gradient($color-verde_fondo ,$color-rojo_claro);
+}
+.formulario{
+    @include tamaños(100%,100rem);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    @include propiedades-flex (none, center, center);
+    background: $color-gris-claro;
+    box-shadow: 0rem 3rem 1rem 1rem rgba(0,0,0,0.5);
+    border-radius: 10rem 10rem;
+}
+.form{
+    @include tamaños(100%,none);
+    background: $color-verde_claro;
+    padding: 3rem;
+    border-radius: 10rem 10rem;
+}
+.form-title {
+    display: block;
+    width:fit-content;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background: $color-terciario;
+    padding: 1rem;
+    font-size: 5rem;
+    color: $color-blanco;
+    text-transform: uppercase;
+    border-radius: 2rem;
+}
+.form-lain{
+    background: $color-rojo_claro;
+    @include propiedades-flex (column, none, center);
+    padding: 2rem 3rem;
+    font-size: 25px;
+    border-radius: 4rem 7rem;
+}
+.form-label{
+    margin: 1rem;
+    font-size: 2rem;
+    padding: 5px;
+    text-transform: uppercase;
+    color: $color-blanco;
+    background: $color-secundario;
+    border-radius: 1rem;
+}
+.form-input{
+    @include tamaños(100%,5rem);
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+.form-select{
+    @include tamaños(100%,5rem);
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    color: $color-gris-claro;
+}
+.form-textarea{
+    @include tamaños(100%,7rem);
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: center;
+}
+.form-enviar{
+    @include tamaños(100%,6rem);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: $color-blanco;
+    border: none;
+    border-radius: 1rem;
+    background-color: $color-tercieario-claro;
+    transition: .2s;
+    cursor: pointer;
+    &:hover{
+        background: $color-terciario;
+    }
+}
+.ubicacion h2{
+    width: fit-content;
+    padding: 2rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    background: $color-terciario;
+    color: $color-blanco;
+}
+.ubicacion-maps iframe{
+    @include tamaños(100%,70rem);
+}
+
+

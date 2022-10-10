@@ -1,0 +1,35 @@
+/*FOOTERRRRR*/
+footer{
+    background: $color-terciario;
+    padding: 2rem;
+    margin-top: 0px;
+    @include tamaños(100%,none);
+}
+.footer__contenido{
+    background-color:$color-secundario;
+    @include propiedades-flex (none, space-between, none);
+    border-radius: 2rem;
+    h3{
+        @include propiedades-flex (none, center, center);
+        margin-left: 5rem;
+        font-size: 2rem;
+    }
+    ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        li{
+            float: left;
+            margin:10px 30px 10px 30px;
+            @include propiedades-flex (none, none, center);
+            svg{
+                @include tamaños(3rem,3rem);
+                path{
+                    color: $color-negro;
+                }
+            }
+        }
+    }
+}
+
+

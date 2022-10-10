@@ -1,0 +1,208 @@
+/*celular*/
+@media screen and (max-width: 420px){
+    /*navegador*/
+    .nav-principal{
+        margin-left: 0rem;
+    }
+    .logo{
+        width: 200px;
+    }
+    nav{
+        > ul{
+            flex-direction: column;
+            background-color: $color-terciario;
+            position: absolute;
+            top: 150px;
+            width: 100%;
+            height: 0px;
+            transition: all 300ms ease;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            > li{
+                margin-left: 0rem;
+                &:first-child{
+                    background-position: center;
+                }
+                > a{
+                    &:hover{
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+        ul{
+            li{
+                &:hover ul{/*flecha del sub menu*/
+                    top: 9rem;
+                }
+                a{
+                    @include propiedades-flex (none, center, none);
+                }
+                ul{
+                    &::before{
+                        left: 8rem; 
+                    }
+                    left: 95px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    #selected{
+        transform: scale(1);
+        margin-top: 10px;
+    }
+    #label-check{
+        display: block;
+    }
+    .icono-menu{
+        display: flex;
+    }
+    #check:checked ~ nav > ul{
+        width:100%;
+        height:70rem;
+        visibility: visible;
+        opacity: 1;
+
+    }
+    /*FOOTER*/
+    .footer__contenido{
+        @include propiedades-flex (column, center, center);
+        h3{
+            display: flex;
+            text-align: center;
+            font-size: 16px;
+            margin: 20px 20px 10px 20px;
+        }
+        ul{
+            li{
+                float: left;
+                margin: 20px 20px;
+                display: flex;
+                align-items: center;
+                svg{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+    /*NOSOTROS*/
+    .box__contenido-nos{
+        height: auto;
+        h4{
+            text-align: center;
+            color: $color-verde_claro;
+            font-size: 70px;
+        }
+    }
+    /*PRODUCTOS VENTANAS--INDICE*/
+    .indice-venpuer{
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    .indice-venpuer img{
+        height: 400px;
+    }
+    /*PRODUCTOSSSS PUERTA VENTANA*//*video*/
+    .titulo-venpuer{
+        font-size: 40px;
+    }
+
+    .video-venpuer iframe{
+        height: auto;
+        padding: 10px;
+    }
+    /*PRODUCTOSSSS PUERTA VENTANA*//*tipos de ventana*/
+    .fondo-tipo-ventana{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .fondo-tipo-ventana{
+        margin: 30px 0px;
+    }
+    .imagenes-ventanas img{ /*para los tipos y direccion de pliegue*/
+        width: 100%;
+        height: auto;
+    }
+    /*PRODUCTOSSSS PUERTA VENTANA*//*direccion de pliegue*/
+    .carta-ventana{
+        @include propiedades-flex (column, none, center);
+    }
+    .fondo-ventanas-distintas{
+        grid-template-columns: repeat(1, 1fr);
+        img{
+            width: 250px;
+            height: auto;
+        }
+    }
+    /*PRODUCTOSSSS PUERTA VENTANA*//*PERFILES*/
+    .fondo-perfiles h2{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .caja-perfil{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .text-perfil{
+        width: 100%;
+    }
+    .fondo-perfiles .caja-perfil .img-perfil img{
+        width: 100%;
+    }
+    .fondo-perfiles .box-perfil .img-perfil img{
+        width: 100%;
+    }
+    /*COLORESSS*/
+    .fondo-video video{
+        height: auto;
+        padding: 10px;
+    }
+    /*MAMPARAS TECCCCCCC--INDICE*/
+    .indice-mamtectec{
+        section{
+            grid-template-columns: repeat(1,1fr);
+            gap: 3rem;
+        }
+    }
+    .enlaces-mamtectec a{
+        font-size: 30px;
+    }
+    .imagen-mamparas{
+        grid-template-columns: repeat(1, 1fr);
+        img{
+        height: auto;
+        }
+    }
+    .fondo-mamtectec p{
+        margin: 10px;
+    }
+    .video-tec iframe{
+        height: 400px;
+    }
+    .imagen-text .img-tec img{
+        width: 100%;
+    }
+    /*MARCASSS*/
+    .fondo-marca h1{
+        text-align: center;
+    }
+    .imagenes-marcas{
+        grid-template-columns: repeat(1, 1fr);
+        img{
+            height: auto;
+        } 
+    } 
+    .imagenes-obra{
+        grid-template-columns: repeat(1, 1fr);
+        img{
+            height: auto;
+        }
+    }
+}
+
+
+
+
+
+
