@@ -100,10 +100,10 @@
     /*PRODUCTOS VENTANAS--INDICE*/
     .indice-venpuer{
         grid-template-columns: repeat(1, 1fr);
+        img{
+            height: 400px;
+        }
     }    
-    .indice-venpuer img{
-        height: 400px;
-    }
     /*PRODUCTOSSSS PUERTA VENTANA*//*video*/
     .titulo-venpuer{
         font-size: 40px;
@@ -116,8 +116,6 @@
     /*PRODUCTOSSSS PUERTA VENTANA*//*tipos de ventana*/
     .fondo-tipo-ventana{
         grid-template-columns: repeat(1, 1fr);
-    }
-    .fondo-tipo-ventana{
         margin: 30px 0px;
     }
     .imagenes-ventanas img{ /*para los tipos y direccion de pliegue*/
@@ -147,10 +145,7 @@
     .text-perfil{
         width: 100%;
     }
-    .fondo-perfiles .caja-perfil .img-perfil img{
-        width: 100%;
-    }
-    .fondo-perfiles .box-perfil .img-perfil img{
+    .img-perfil img{
         width: 100%;
     }
     /*COLORESSS*/
@@ -180,7 +175,7 @@
     .video-tec iframe{
         height: 400px;
     }
-    .imagen-text .img-tec img{
+    .img-tec img{
         width: 100%;
     }
     /*MARCASSS*/

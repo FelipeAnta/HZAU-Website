@@ -44,7 +44,7 @@
     @include propiedades-grid (repeat(3,1fr),none,5rem);
     margin: 3rem 5rem;
     img{
-        @include tamaños(100%,50rem);
+        @include sizes (100%,50rem);
         transition: .3s;
         background-color: $color-terciario;
         padding: 1rem;
@@ -55,11 +55,11 @@
     }
 }
 .video-tec iframe{
-    @include tamaños(100%,70rem);
+    @include sizes (100%,70rem);
     margin: 4rem 0rem;
 }
-.imagen-text .img-tec{
+.img-tec{
     @include propiedades-flex (none, center, none);
-    @include tamaños(100%,none);
+    @include sizes (100%,none);
     margin-top: 4rem;
 }

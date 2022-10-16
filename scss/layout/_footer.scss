@@ -3,7 +3,7 @@ footer{
     background: $color-terciario;
     padding: 2rem;
     margin-top: 0px;
-    @include tamaños(100%,none);
+    @include sizes (100%,none);
 }
 .footer__contenido{
     background-color:$color-secundario;
@@ -23,7 +23,7 @@ footer{
             margin:10px 30px 10px 30px;
             @include propiedades-flex (none, none, center);
             svg{
-                @include tamaños(3rem,3rem);
+                @include sizes (3rem,3rem);
                 path{
                     color: $color-negro;
                 }

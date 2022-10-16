@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -218,29 +219,30 @@ footer {
   justify-content: center;
   gap: none; }
 
-.box__1i img {
-  width: 100%;
-  height: auto;
-  border-radius: 40px; }
-
-.box__i {
+.box_ii, .box_iii {
   background: #5c5b5b;
   text-align: center;
   border-radius: 3rem;
   padding: 2rem;
   margin: 30px 0px; }
-  .box__i h1 {
+  .box_ii h1, .box_iii h1 {
     width: fit-content;
     margin: 0 auto;
     background: #b3c04e;
     padding: 1rem;
     border-radius: 2rem; }
-  .box__i p {
+  .box_ii p, .box_iii p {
     background: #919191;
     padding: 15px;
     border-radius: 2rem;
     margin: 20px 0px; }
 
+.box_1ii img, .box_2ii img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px; }
+
+/*Siendo que en mi codigo css no era necesario utilizar un extend y a fines de cumplir con la consigna impuesta, forcé el uso de un extend en esta sección. Entiendo que usando una misma clase era mas que suficiente, pero lo hice a fines demostrativos, de que se usar el extend*/
 /*NOSOTROS*/
 .fondo-descripcion {
   width: 100%;
@@ -426,19 +428,14 @@ footer {
   justify-content: center;
   align-items: center; }
 
-.fondo-perfiles .caja-perfil .img-perfil img {
-  width: 700px;
-  height: none; }
-
-.fondo-perfiles .box-perfil .img-perfil img {
-  width: none;
-  height: 10rem; }
-
 .img-perfil {
   display: flex;
   flex-direction: none;
   justify-content: center;
   align-items: center; }
+  .img-perfil img {
+    width: 700px;
+    height: none; }
 
 /*PRODUCTOSSSS PUERTA VENTANA*/
 /*coloressss*/
@@ -568,7 +565,7 @@ footer {
   height: 70rem;
   margin: 4rem 0rem; }
 
-.imagen-text .img-tec {
+.img-tec {
   display: flex;
   flex-direction: none;
   justify-content: center;
@@ -818,8 +815,8 @@ footer {
   /*PRODUCTOS VENTANAS--INDICE*/
   .indice-venpuer {
     grid-template-columns: repeat(1, 1fr); }
-  .indice-venpuer img {
-    height: 400px; }
+    .indice-venpuer img {
+      height: 400px; }
   /*PRODUCTOSSSS PUERTA VENTANA*/
   /*video*/
   .titulo-venpuer {
@@ -830,8 +827,7 @@ footer {
   /*PRODUCTOSSSS PUERTA VENTANA*/
   /*tipos de ventana*/
   .fondo-tipo-ventana {
-    grid-template-columns: repeat(1, 1fr); }
-  .fondo-tipo-ventana {
+    grid-template-columns: repeat(1, 1fr);
     margin: 30px 0px; }
   .imagenes-ventanas img {
     /*para los tipos y direccion de pliegue*/
@@ -859,9 +855,7 @@ footer {
     grid-template-columns: repeat(1, 1fr); }
   .text-perfil {
     width: 100%; }
-  .fondo-perfiles .caja-perfil .img-perfil img {
-    width: 100%; }
-  .fondo-perfiles .box-perfil .img-perfil img {
+  .img-perfil img {
     width: 100%; }
   /*COLORESSS*/
   .fondo-video video {
@@ -881,7 +875,7 @@ footer {
     margin: 10px; }
   .video-tec iframe {
     height: 400px; }
-  .imagen-text .img-tec img {
+  .img-tec img {
     width: 100%; }
   /*MARCASSS*/
   .fondo-marca h1 {

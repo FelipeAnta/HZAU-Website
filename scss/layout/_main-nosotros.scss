@@ -1,6 +1,6 @@
 /*NOSOTROS*/
 .fondo-descripcion{
-    @include tamaños(100%,1000px);
+    @include sizes (100%,1000px);
     @include propiedades-flex (none, center, center);
     background-image: url(../assets/fabricaNieve.jpg);
     background-size: cover;
@@ -14,7 +14,7 @@
     border-radius: 3rem 7rem;
     margin: 0px 40px;
     opacity: 85%;
-    @include tamaños(100%,none);
+    @include sizes (100%,none);
     color: $color-blanco;
     h4{
         text-align: center;

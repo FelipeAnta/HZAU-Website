@@ -11,13 +11,13 @@ header{
 }
 
 .logo {
-    @include tamaños(300px,none);
+    @include sizes (300px,none);
 }
 
 /*BARRA MENU*/
 
 .box-menu{
-    @include tamaños(100%,9rem);
+    @include sizes (100%,9rem);
     background: $color-terciario;
     padding: 2rem; /* para cuando estemos en responsive tengo un espacio en los costados*/
 }
@@ -32,7 +32,7 @@ header{
 }
 nav{
     @include propiedades-flex (none, center, none);
-    @include tamaños(100%,100%);
+    @include sizes (100%,100%);
     > ul{
         height: 100%;
         display: flex;
@@ -40,7 +40,7 @@ nav{
             padding: 2rem 3rem;
         }
         > li > a{
-            @include tamaños(100%,100%);
+            @include sizes (100%,100%);
             @include propiedades-flex (none, none, center);
             padding: 2rem;
             color: $color-blanco;
@@ -54,7 +54,7 @@ nav{
     }
     ul{
         li{
-            @include tamaños(none,100%);
+            @include sizes (none,100%);
             list-style: none;
             position: relative;
             &:hover ul{
@@ -63,7 +63,7 @@ nav{
                 top: 6rem;
             }
             ul{/*SUB MENU*/
-                @include tamaños(20rem,none);
+                @include sizes (20rem,none);
                 @include propiedades-flex (column, none, none);
                 background: $color-gris-claro;
                 position: absolute;
@@ -76,7 +76,7 @@ nav{
                 transition: all 300ms ease;
                 &::before{/*flecha del sub menu*/
                     content: "";
-                    @include tamaños(0,0);
+                    @include sizes (0,0);
                     border-left: 12px solid transparent;
                     border-right: 12px solid transparent;
                     border-bottom: 12px solid $color-gris-claro;
@@ -121,12 +121,12 @@ nav{
     font-size: 26px;
     color:$color-blanco;
     cursor: pointer;
-    @include tamaños(2rem,100%);
+    @include sizes (2rem,100%);
     display: flex;
     align-items: center;
 }
 #label-check{
-    @include tamaños(26px,100%);
+    @include sizes (26px,100%);
     display: none;
 }
 #check{

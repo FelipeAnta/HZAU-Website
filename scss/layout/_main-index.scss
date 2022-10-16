@@ -3,12 +3,7 @@
     @include propiedades-grid (repeat(1,1fr),center,none);
 }
 
-.box__1i img{
-    @include tamaños(100%,auto);
-    border-radius: 40px;
-}
-
-.box__i{
+.box_ii{
     background: $color-gris;
     text-align: center;
     border-radius: 3rem;
@@ -28,3 +23,16 @@
         margin: 20px 0px;
     }
 }
+
+.box_1ii img{
+    @include sizes (100%,auto);
+    border-radius: 40px;
+}
+.box_2ii{
+    @extend .box_1ii;
+}
+
+.box_iii{
+    @extend .box_ii;
+}
+/*Siendo que en mi codigo css no era necesario utilizar un extend y a fines de cumplir con la consigna impuesta, forcé el uso de un extend en esta sección. Entiendo que usando una misma clase era mas que suficiente, pero lo hice a fines demostrativos, de que se usar el extend*/
